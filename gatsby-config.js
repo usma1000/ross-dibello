@@ -4,9 +4,9 @@ require("dotenv").config({
 
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Starter SaaS Marketing`,
-    description: `A simple one page marketing starter for saas companies.`,
-    author: `Keegan Burkett`,
+    title: `Ross DiBello`,
+    description: `Running for Mayor of Cleveland.`,
+    author: `Anand Upadhyay`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -28,6 +28,13 @@ module.exports = {
       options: {
         name: `product`,
         path: `${__dirname}/src/images/product`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `ross`,
+        path: `${__dirname}/src/images/ross`,
       },
     },
     `gatsby-transformer-sharp`,
