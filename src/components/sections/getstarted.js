@@ -6,9 +6,8 @@ import { Container, Section } from "../global"
 const GetStarted = () => (
   <StyledSection>
     <GetStartedContainer>
-      <GetStartedTitle>Be the first to get the beta</GetStartedTitle>
-      <TryItButton>Get early access</TryItButton>
-      <Subtitle>No credit card required.</Subtitle>
+      <GetStartedTitle>Be the first to know</GetStartedTitle>
+      <TryItButton>Join the Newsletter</TryItButton>
     </GetStartedContainer>
   </StyledSection>
 )
@@ -16,7 +15,7 @@ const GetStarted = () => (
 export default GetStarted
 
 const StyledSection = styled(Section)`
-  background-color: ${props => props.theme.color.background.light};
+  background-color: ${(props) => props.theme.color.background.light};
   clip-path: polygon(0 0, 100% 14%, 100% 100%, 0% 100%);
 `
 
@@ -25,7 +24,7 @@ const GetStartedContainer = styled(Container)`
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding: 80px 0 40px;
+  padding: 80px 0;
 `
 
 const GetStartedTitle = styled.h3`
@@ -44,7 +43,7 @@ const TryItButton = styled.button`
   text-transform: uppercase;
   cursor: pointer;
   white-space: nowrap;
-  background: ${props => props.theme.color.secondary};
+  background: ${(props) => props.theme.color.secondary};
   border-radius: 4px;
   padding: 0px 40px;
   border-width: 0px;
@@ -55,16 +54,9 @@ const TryItButton = styled.button`
   &:hover {
     box-shadow: rgba(110, 120, 152, 0.22) 0px 2px 10px 0px;
   }
-  @media (max-width: ${props => props.theme.screen.md}) {
+  @media (max-width: ${(props) => props.theme.screen.md}) {
   }
-  @media (max-width: ${props => props.theme.screen.sm}) {
+  @media (max-width: ${(props) => props.theme.screen.sm}) {
     margin-left: 0;
   }
-`
-
-const Subtitle = styled.span`
-  ${props => props.theme.font_size.xxsmall}
-  padding-top: 16px;
-  font-size: 14px;
-  color: ${props => props.theme.color.primary};
 `

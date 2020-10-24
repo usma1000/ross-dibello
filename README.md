@@ -1,12 +1,4 @@
-## ☁️ A simple one page marketing site starter for SaaS companies and indie hackers.
-
-[Live Demo: https://gatsby-starter-saas-marketing.netlify.com/ ](https://gatsby-starter-saas-marketing.netlify.com/)
-
-If you find this starter helpful, feel free to give me a follow on <a href="https://www.indiehackers.com/keeg" target="blank">Indie Hackers</a>. I'm working on releasing a series of Gatsby starters in Fall of 2020.
-
-<img src="src/images/gatsby-starter-saas-marketing-full-page.png?raw=true" width="600" alt="Gatsby Starter Saas Marketing Full Screen Image"/>
-
-### Getting started 🍻
+## Getting started 🍻
 
 install Gatsby CLI - [more info](https://www.gatsbyjs.org/tutorial/part-zero/)
 
@@ -58,15 +50,12 @@ gatsby serve
 
 ### Styles
 
-This starter uses [styled-components](https://www.styled-components.com/). The theme file contains the base styles `src/styles/theme.js` and the global styles file contains basic element styles and a style reset `src/styles/GlobalStyles.js`.
+This site uses [styled-components](https://www.styled-components.com/). The theme file contains the base styles `src/styles/theme.js` and the global styles file contains basic element styles and a style reset `src/styles/GlobalStyles.js`.
 
 ### Navigation
 
-This starter uses [react-anchor-link-smooth-scroll](https://github.com/mauricevancooten/react-anchor-link-smooth-scroll#readme) and [react-scrollspy](https://github.com/makotot/react-scrollspy).
+This site uses [react-anchor-link-smooth-scroll](https://github.com/mauricevancooten/react-anchor-link-smooth-scroll#readme) and [react-scrollspy](https://github.com/makotot/react-scrollspy).
 To link a navigation item to a section simply add an id and string value to a section parent element that corresponds to the same navigation string value in `navigation.js`
-<br>
-<br>
-⚠️ Only the `Features` section is linked. Product and Pricing sections are intentionally not linked and will throw a `TypeError` in the console when clicked (because they do not exist in the starter). Please reach out if you want help extending this feature.
 
 ### Deploying to Netlify
 
