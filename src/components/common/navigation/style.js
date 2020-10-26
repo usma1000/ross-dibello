@@ -79,7 +79,7 @@ export const Brand = styled.div`
     padding: 0;
 
     a {
-      color: ${(props) => props.theme.color.black.regular};
+      color: ${(props) => props.theme.color.secondary};
       text-decoration: none;
     }
   }

@@ -66,17 +66,6 @@ export default class Navigation extends Component {
         {NAV_ITEMS.map((navItem) => (
           <NavItem key={navItem}>{this.getNavAnchorLink(navItem)}</NavItem>
         ))}
-
-        <NavItem>
-          <a
-            href="https://secure.actblue.com/donate/dibelloforcle"
-            target="_blank"
-            rel="noreferrer"
-            className="button"
-          >
-            Donate
-          </a>
-        </NavItem>
       </Scrollspy>
     </NavListWrapper>
   )
@@ -106,9 +95,17 @@ export default class Navigation extends Component {
               )}
             </button>
           </Mobile>
-
+          <Mobile hide>{this.getNavList({})}</Mobile>
           <ActionsContainer>
-            <Mobile hide>{this.getNavList({})}</Mobile>
+            [Social Media Here]
+            <a
+              href="https://secure.actblue.com/donate/dibelloforcle"
+              target="_blank"
+              rel="noreferrer"
+              className="button"
+            >
+              Donate
+            </a>
           </ActionsContainer>
         </StyledContainer>
         <Mobile>

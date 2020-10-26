@@ -22,7 +22,7 @@ const About = () => {
   return (
     <Section id="about">
       <SectionTitle subtitle="About" title="Insert Title Here" />
-      <StyledContainer flex>
+      <Container flex>
         <ImageWrapper>
           <StyledImage fluid={data.file.childImageSharp.fluid} />
           <ImageCaption>
@@ -92,31 +92,31 @@ const About = () => {
             Ohio.
           </p>
 
-          <p>
-            <b>Memberships/Affiliations:</b>
-          </p>
-          <ul>
-            <li>Lifelong Democrat</li>
-            <li>
-              2019 graduate of the Cleveland Metropolitan Bar Association
-              Leadership Academy
-            </li>
-            <li>Cleveland Wards 11 and 17 Democratic Club</li>
-            <li>Cleveland Professional Twenty-Thirty Club</li>
-            <li>The Ohio State University Alumni Club of Greater Cleveland</li>
-            <li>Westshore Bar Association</li>
-            <li>Justinian Forum</li>
-            <li>City Dogs Volunteer (and Adopter)</li>
-          </ul>
+          <Affiliations>
+            <AffiliationsTitle>Memberships/Affiliations:</AffiliationsTitle>
+            <ul>
+              <li>Lifelong Democrat</li>
+              <li>
+                2019 graduate of the Cleveland Metropolitan Bar Association
+                Leadership Academy
+              </li>
+              <li>Cleveland Wards 11 and 17 Democratic Club</li>
+              <li>Cleveland Professional Twenty-Thirty Club</li>
+              <li>
+                The Ohio State University Alumni Club of Greater Cleveland
+              </li>
+              <li>Westshore Bar Association</li>
+              <li>Justinian Forum</li>
+              <li>City Dogs Volunteer (and Adopter)</li>
+            </ul>
+          </Affiliations>
         </div>
-      </StyledContainer>
+      </Container>
     </Section>
   )
 }
 
 export default About
-
-const StyledContainer = styled(Container)``
 
 const ImageWrapper = styled.div`
   margin-right: 40px;
@@ -138,4 +138,15 @@ const StyledImage = styled(Img)`
   @media (max-width: ${(props) => props.theme.screen.md}) {
     width: 100%;
   }
+`
+const Affiliations = styled.div`
+  background-color: ${(props) => props.theme.color.white.dark};
+  border: 1px solid ${(props) => props.theme.color.accent};
+  padding: 20px;
+  margin-top: 40px;
+`
+
+const AffiliationsTitle = styled.h3`
+  margin: 0;
+  ${(props) => props.theme.font_size.large}
 `
