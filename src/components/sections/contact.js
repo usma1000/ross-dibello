@@ -14,9 +14,6 @@ import {
 } from "@fortawesome/free-brands-svg-icons"
 
 const Contact = () => {
-  const handleSubmit = (event) => {
-    event.preventDefault()
-  }
   return (
     <Section id="contact">
       <StyledContainer>
@@ -27,10 +24,14 @@ const Contact = () => {
             <ContactTitle>Reach Out</ContactTitle>
             <p>Let your voice be heard. Send us a message.</p>
 
-            <ContactForm onSubmit={handleSubmit}>
-              <FormInput placeholder="Your email" type="email" />
-              <TextArea placeholder="Your message" />
-              <FormButton>Send Mail</FormButton>
+            <ContactForm name="contact" method="POST" data-netlify="true">
+              <FormInput name="email" placeholder="Your email" type="email" />
+              <FormInput name="name" placeholder="Your name" type="text" />
+              <TextArea name="message" placeholder="Your message" />
+              <div data-netlify-recaptcha="true"></div>
+              <FormButton type="submit" style={{ marginTop: "20px" }}>
+                Send Mail
+              </FormButton>
             </ContactForm>
           </div>
 
