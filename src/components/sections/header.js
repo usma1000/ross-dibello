@@ -3,7 +3,8 @@ import styled from "styled-components"
 import { graphql, useStaticQuery } from "gatsby"
 import Img from "gatsby-image"
 
-import { Container, Form, FormInput, FormButton } from "../global"
+import { Container } from "../global"
+import MailchimpForm from "../common/mailchimpform"
 
 const Header = () => {
   const data = useStaticQuery(graphql`
@@ -18,10 +19,6 @@ const Header = () => {
     }
   `)
 
-  const handleSubmit = (event) => {
-    event.preventDefault()
-  }
-
   return (
     <HeaderWrapper id="top">
       <Container>
@@ -34,10 +31,8 @@ const Header = () => {
               Right Direction.
             </h1>
             <h2>Join our campaign. Help us fight for a better future.</h2>
-            <Form onSubmit={handleSubmit}>
-              <FormInput placeholder="Your email" />
-              <FormButton>Subscribe</FormButton>
-            </Form>
+
+            <MailchimpForm />
           </HeaderTextGroup>
           <ImageWrapper>
             <StyledImage fluid={data.file.childImageSharp.fluid} />
@@ -70,7 +65,6 @@ const HeaderTextGroup = styled.div`
   margin: 0;
 
   > div {
-    width: 120%;
     margin-bottom: -4.5%;
 
     @media (max-width: ${(props) => props.theme.screen.md}) {

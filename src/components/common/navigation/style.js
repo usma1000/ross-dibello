@@ -122,6 +122,16 @@ export const Mobile = styled.div`
   `}
 `
 
+export const SocialIcon = styled.a`
+  display: inline-block;
+  margin-right: 20px;
+  color: ${(props) => props.theme.color.black.regular};
+
+  &:hover {
+    color: ${(props) => props.theme.color.secondary};
+  }
+`
+
 // Background blur info
 // background-color: ${props => props.scrolled && `rgba(245, 245, 250, .8`};
 // box-shadow:  ${props =>

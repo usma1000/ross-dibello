@@ -53,16 +53,6 @@ export const Section = styled.section`
   margin: 40px 0;
   padding: 40px 0;
   overflow: hidden;
-  background-color: ${(props) => {
-    switch (props.accent) {
-      case "secondary":
-        return props.theme.color.background.light
-      case "main":
-        return props.theme.color.primary
-      default:
-        return "white"
-    }
-  }};
 
   @media (max-width: ${(props) => props.theme.screen.md}) {
     padding: 80px 0;
@@ -73,7 +63,7 @@ export const Section = styled.section`
     `background-color: ${
       props.accent === "secondary"
         ? props.theme.color.background.light
-        : props.theme.color.primary
+        : props.theme.color.white.dark
     }`};
 `
 
@@ -95,6 +85,32 @@ export const FormInput = styled.input`
   width: 100%;
   text-align: left;
   height: 60px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: ${(props) => props.theme.color.secondary};
+  border-image: initial;
+  border-radius: 4px;
+  padding: 8px 16px;
+  outline: 0px;
+  &:focus {
+    box-shadow: inset ${(props) => props.theme.color.secondary} 0px 0px 0px 2px;
+  }
+  @media (max-width: ${(props) => props.theme.screen.md}) {
+    margin-bottom: 8px;
+  }
+  @media (max-width: ${(props) => props.theme.screen.sm}) {
+    display: block;
+    width: 100%;
+  }
+`
+
+export const TextArea = styled.textarea`
+  font-weight: 500;
+  font-size: 16px;
+  color: ${(props) => props.theme.color.primary};
+  line-height: 42px;
+  width: 100%;
+  text-align: left;
   border-width: 1px;
   border-style: solid;
   border-color: ${(props) => props.theme.color.secondary};

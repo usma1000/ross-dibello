@@ -3,6 +3,16 @@ import AnchorLink from "react-anchor-link-smooth-scroll"
 import Scrollspy from "react-scrollspy"
 import { Menu, X } from "react-feather"
 
+import SubLogo from "../logo"
+
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import {
+  faTwitter,
+  faFacebook,
+  faLinkedinIn,
+  faInstagram,
+} from "@fortawesome/free-brands-svg-icons"
+
 import { Container } from "../../global"
 import {
   Nav,
@@ -13,6 +23,7 @@ import {
   MobileMenu,
   Mobile,
   ActionsContainer,
+  SocialIcon,
 } from "./style"
 
 const NAV_ITEMS = ["About", "Policy", "Contact"]
@@ -79,7 +90,7 @@ export default class Navigation extends Component {
           <Brand>
             <Scrollspy offset={-64} item={["top"]} currentClassName="active">
               <AnchorLink href="#top" onClick={this.closeMobileMenu}>
-                Ross DiBello
+                <SubLogo />
               </AnchorLink>
             </Scrollspy>
           </Brand>
@@ -97,7 +108,34 @@ export default class Navigation extends Component {
           </Mobile>
           <Mobile hide>{this.getNavList({})}</Mobile>
           <ActionsContainer>
-            [Social Media Here]
+            <SocialIcon
+              href="https://twitter.com/Rossitron5"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <FontAwesomeIcon icon={faTwitter} />
+            </SocialIcon>
+            <SocialIcon
+              href="https://www.facebook.com/RossDiBelloMayorOfCleveland"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <FontAwesomeIcon icon={faFacebook} />
+            </SocialIcon>
+            <SocialIcon
+              href="https://www.instagram.com/ross_dibello_cle/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <FontAwesomeIcon icon={faInstagram} />
+            </SocialIcon>
+            <SocialIcon
+              href="https://www.linkedin.com/in/ross-dibello-78744039/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <FontAwesomeIcon icon={faLinkedinIn} />
+            </SocialIcon>
             <a
               href="https://secure.actblue.com/donate/dibelloforcle"
               target="_blank"

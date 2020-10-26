@@ -1,45 +1,58 @@
 import React from "react"
 import styled from "styled-components"
-
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import {
+  faTwitter,
+  faFacebook,
+  faLinkedinIn,
+  faInstagram,
+} from "@fortawesome/free-brands-svg-icons"
 import { Container } from "../global"
+import SubLogo from "../common/logo"
 
 const Footer = () => (
   <FooterWrapper id="footer">
-    <FooterColumnContainer>
-      <FooterColumn>
-        <span>Features</span>
-        <ul>
-          <li>Automation</li>
-          <li>Rewards</li>
-        </ul>
-      </FooterColumn>
-      <FooterColumn>
-        <span>Resources</span>
-        <ul>
-          <li>Compare</li>
-          <li>Blog</li>
-        </ul>
-      </FooterColumn>
-      <FooterColumn>
-        <span>Company</span>
-        <ul>
-          <li>About Us</li>
-          <li>Careers</li>
-        </ul>
-      </FooterColumn>
-      <FooterColumn>
-        <span>Social</span>
-        <ul>
-          <li>LinkedIn</li>
-          <li>Instagram</li>
-        </ul>
-      </FooterColumn>
-    </FooterColumnContainer>
-    <BrandContainer>
-      <Logo>Ross DiBello</Logo>
-    </BrandContainer>
+    <FooterContainer flex>
+      <SubLogo />
+
+      <Text>Paid for by Committee to Elect Ross DiBello</Text>
+      <div>
+        <SocialIcon
+          href="https://twitter.com/Rossitron5"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <FontAwesomeIcon icon={faTwitter} />
+        </SocialIcon>
+        <SocialIcon
+          href="https://www.facebook.com/RossDiBelloMayorOfCleveland"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <FontAwesomeIcon icon={faFacebook} />
+        </SocialIcon>
+        <SocialIcon
+          href="https://www.instagram.com/ross_dibello_cle/"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <FontAwesomeIcon icon={faInstagram} />
+        </SocialIcon>
+        <SocialIcon
+          href="https://www.linkedin.com/in/ross-dibello-78744039/"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <FontAwesomeIcon icon={faLinkedinIn} />
+        </SocialIcon>
+      </div>
+    </FooterContainer>
   </FooterWrapper>
 )
+
+const FooterContainer = styled(Container)`
+  align-items: center;
+`
 
 const FooterWrapper = styled.footer`
   background-color: white;
@@ -47,57 +60,18 @@ const FooterWrapper = styled.footer`
   padding: 0 0 80px;
 `
 
-const Logo = styled.div`
-  font-family: ${(props) => props.theme.font.extrabold};
-  ${(props) => props.theme.font_size.regular};
+const Text = styled.div`
+  flex-grow: 1;
+  text-align: center;
+`
+
+const SocialIcon = styled.a`
+  display: inline-block;
+  margin-right: 20px;
   color: ${(props) => props.theme.color.black.regular};
-  text-decoration: none;
-  letter-spacing: 1px;
-  margin: 0;
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  z-index: 9;
-  text-decoration: none;
-  outline: 0px;
-`
 
-const BrandContainer = styled(Container)`
-  position: relative;
-  padding-top: 48px;
-  display: flex;
-  align-items: flex-end;
-
-  @media (max-width: ${(props) => props.theme.screen.sm}) {
-  }
-`
-const FooterColumnContainer = styled(Container)`
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-column-gap: 32px;
-  justify-content: start;
-  @media (max-width: ${(props) => props.theme.screen.sm}) {
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 32px;
-  }
-`
-const FooterColumn = styled.div`
-  span {
-    font-size: 16px;
-    font-family: ${(props) => props.theme.font.bold};
-    color: ${(props) => props.theme.color.primary};
-  }
-  ul {
-    list-style: none;
-    margin: 16px 0;
-    padding: 0;
-    color: ${(props) => props.theme.color.black.regular};
-    li {
-      margin-bottom: 12px;
-      font-family: ${(props) => props.theme.font.normal};
-      font-size: 15px;
-    }
+  &:hover {
+    color: ${(props) => props.theme.color.secondary};
   }
 `
 

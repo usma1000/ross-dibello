@@ -7,7 +7,13 @@ const GetStarted = () => (
   <StyledSection>
     <GetStartedContainer>
       <GetStartedTitle>Be a part of the movement</GetStartedTitle>
-      <TryItButton>Donate</TryItButton>
+      <TryItButton
+        href="https://secure.actblue.com/donate/dibelloforcle"
+        target="_blank"
+        rel="noreferrer"
+      >
+        Donate
+      </TryItButton>
     </GetStartedContainer>
   </StyledSection>
 )
@@ -30,14 +36,14 @@ const GetStartedContainer = styled(Container)`
 const GetStartedTitle = styled.h3`
   margin: 0 auto 32px;
   text-align: center;
+  color: ${(props) => props.theme.color.secondary};
 `
 
-const TryItButton = styled.button`
+const TryItButton = styled.a`
   font-weight: 500;
   font-size: 14px;
   color: white;
   letter-spacing: 1px;
-  height: 60px;
   display: block;
   margin-left: 8px;
   text-transform: uppercase;
@@ -45,16 +51,16 @@ const TryItButton = styled.button`
   white-space: nowrap;
   background: ${(props) => props.theme.color.secondary};
   border-radius: 4px;
-  padding: 0px 40px;
+  padding: 20px 40px;
   border-width: 0px;
   border-style: initial;
   border-color: initial;
   border-image: initial;
   outline: 0px;
+  text-decoration: none;
+  transition: box-shadow 0.2s;
   &:hover {
-    box-shadow: rgba(110, 120, 152, 0.22) 0px 2px 10px 0px;
-  }
-  @media (max-width: ${(props) => props.theme.screen.md}) {
+    box-shadow: rgba(110, 120, 152, 0.5) 0px 2px 10px 0px;
   }
   @media (max-width: ${(props) => props.theme.screen.sm}) {
     margin-left: 0;

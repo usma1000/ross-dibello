@@ -5,7 +5,7 @@ import { Section, Container } from "../global"
 import SectionTitle from "../common/sectiontitle"
 
 const Policy = () => (
-  <Section id="policy" accent="secondary">
+  <Section id="policy" accent="main">
     <Container>
       <SectionTitle subtitle="Policy" title="A better Cleveland is possibe" />
 
