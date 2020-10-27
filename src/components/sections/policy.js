@@ -7,9 +7,12 @@ import SectionTitle from "../common/sectiontitle"
 const Policy = () => (
   <Section id="policy" accent="main">
     <Container>
-      <SectionTitle subtitle="Policy" title="A better Cleveland is possibe" />
+      <SectionTitle
+        subtitle="Policy"
+        title="Together A Better Cleveland Is Possible"
+      />
 
-      <FeatureTitle>Need Intro Title</FeatureTitle>
+      <FeatureTitle>Why I'm Running</FeatureTitle>
       <p>
         Too many of our children are living in poverty. Racial injustice is a
         crisis of both our morals and our public health. Our schools are failing

@@ -17,7 +17,7 @@ const Contact = () => {
   return (
     <Section id="contact">
       <StyledContainer>
-        <SectionTitle subtitle="Contact" title="Work With Us" />
+        <SectionTitle subtitle="Contact" title="Help Us Get On The Ballot" />
 
         <Container flex>
           <div className="left">
@@ -29,22 +29,21 @@ const Contact = () => {
               method="POST"
               netlify-honeypot="bot-field"
               data-netlify="true"
-              data-netlify-recaptcha="true"
             >
               <input type="hidden" name="bot-field" />
               <input type="hidden" name="form-name" value="contact" />
               <FormInput name="email" placeholder="Your email" type="email" />
               <FormInput name="name" placeholder="Your name" type="text" />
               <TextArea name="message" placeholder="Your message" />
-              <div data-netlify-recaptcha="true"></div>
-              <FormButton type="submit" style={{ marginTop: "20px" }}>
-                Send Mail
-              </FormButton>
+              <FormButton type="submit">Send Mail</FormButton>
             </ContactForm>
           </div>
 
           <div className="right">
-            <Logo type="full" style={{ maxWidth: "300px", margin: "0 auto" }} />
+            <Logo
+              type="full"
+              style={{ maxWidth: "300px", margin: "20px auto" }}
+            />
             <ContactTitle>Stay Informed</ContactTitle>
             <p>Follow Ross on social media.</p>
             <SocialIcon

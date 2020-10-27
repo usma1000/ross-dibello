@@ -99,8 +99,9 @@ export const ActionsContainer = styled.div`
     border-radius: 4px;
     padding: 10px 16px;
     text-transform: uppercase;
-    font-size: 12px;
+    font-size: 14px;
     text-decoration: none;
+    font-weight: bold;
   }
 `
 

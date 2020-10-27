@@ -17,7 +17,7 @@ const Logo = (props) => {
       }
       fulllogo: file(
         sourceInstanceName: { eq: "images" }
-        name: { eq: "logo-full" }
+        name: { eq: "logo-full-2" }
       ) {
         childImageSharp {
           fluid(maxWidth: 300) {

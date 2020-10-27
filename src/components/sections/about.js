@@ -9,7 +9,7 @@ import SectionTitle from "../common/sectiontitle"
 const About = () => {
   const data = useStaticQuery(graphql`
     query {
-      file(sourceInstanceName: { eq: "ross" }, name: { eq: "about" }) {
+      file(sourceInstanceName: { eq: "ross" }, name: { eq: "about2" }) {
         childImageSharp {
           fluid(maxWidth: 400) {
             ...GatsbyImageSharpFluid
@@ -21,7 +21,7 @@ const About = () => {
 
   return (
     <Section id="about">
-      <SectionTitle subtitle="About" title="Insert Title Here" />
+      <SectionTitle subtitle="About" title="Get To Know Ross" />
       <Container flex>
         <ImageWrapper>
           <StyledImage fluid={data.file.childImageSharp.fluid} />
@@ -71,10 +71,9 @@ const About = () => {
             this time, I faced worry from debt as I worked two full-time jobs
             for close to minimum wage. Then, after a victorious 2012 campaign, I
             received the honor of serving as Judge Collier-Williams’s staff
-            attorney at the Court of Common Pleas until through April of 2020
-            when, due to family concerns and coronavirus, I had to make the
-            difficult choice to pursue freelance legal work while confined to my
-            home.
+            attorney at the Court of Common Pleas until April of 2020 when, due
+            to family concerns and coronavirus, I had to make the difficult
+            choice to pursue freelance legal work while confined to my home.
           </p>
           <p>
             I love games. My whole life, if I found a game that interested me, I

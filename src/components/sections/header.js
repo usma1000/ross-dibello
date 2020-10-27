@@ -5,11 +5,12 @@ import Img from "gatsby-image"
 
 import { Container } from "../global"
 import MailchimpForm from "../common/mailchimpform"
+import Logo from "../common/logo"
 
 const Header = () => {
   const data = useStaticQuery(graphql`
     query {
-      file(sourceInstanceName: { eq: "ross" }, name: { eq: "header" }) {
+      file(sourceInstanceName: { eq: "ross" }, name: { eq: "header2" }) {
         childImageSharp {
           fluid(maxWidth: 500) {
             ...GatsbyImageSharpFluid
@@ -24,13 +25,17 @@ const Header = () => {
       <Container>
         <Flex>
           <HeaderTextGroup>
-            <Subtitle>Join Us</Subtitle>
+            <Logo
+              type="full"
+              style={{ maxWidth: "300px", margin: "40px  0" }}
+            />
+            <Subtitle>Join Ross DiBello for Mayor of Cleveland</Subtitle>
             <h1>
               Real Democracy.
               <br />
               Right Direction.
             </h1>
-            <h2>Join our campaign. Help us fight for a better future.</h2>
+            <h2>Join our team. Help us fight for a better future.</h2>
 
             <MailchimpForm />
           </HeaderTextGroup>
