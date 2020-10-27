@@ -24,7 +24,15 @@ const Contact = () => {
             <ContactTitle>Reach Out</ContactTitle>
             <p>Let your voice be heard. Send us a message.</p>
 
-            <ContactForm name="contact" method="POST" data-netlify="true">
+            <ContactForm
+              name="contact"
+              method="POST"
+              netlify-honeypot="bot-field"
+              data-netlify="true"
+              data-netlify-recaptcha="true"
+            >
+              <input type="hidden" name="bot-field" />
+              <input type="hidden" name="form-name" value="contact" />
               <FormInput name="email" placeholder="Your email" type="email" />
               <FormInput name="name" placeholder="Your name" type="text" />
               <TextArea name="message" placeholder="Your message" />
