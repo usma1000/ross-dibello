@@ -178,9 +178,9 @@ const Policy = () => (
         act, speak the truth and become politically active in 2021.
       </p>
       <p>
-        Support ROSS DIBELLO FOR MAYOR. Help us fight for Cleveland’s future.{" "}
+        Support ROSS DIBELLO FOR MAYOR. Help us fight for Cleveland’s future.
       </p>
-      <p>Head to our VOLUNTEER tab for a list of ways you can help today.</p>
+      <p>Head to our CONTACT tab for a list of ways you can help today.</p>
     </Container>
   </Section>
 )
