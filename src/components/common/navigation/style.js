@@ -126,6 +126,7 @@ export const Mobile = styled.div`
 export const SocialIcon = styled.a`
   display: inline-block;
   margin-right: 20px;
+  max-width: 16px;
   color: ${(props) => props.theme.color.black.regular};
 
   &:hover {

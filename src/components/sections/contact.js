@@ -118,4 +118,5 @@ const SocialIcon = styled.a`
   ${(props) => props.theme.font_size.larger};
   color: ${(props) => props.theme.color.accent};
   margin-right: 20px;
+  max-width: 35px;
 `

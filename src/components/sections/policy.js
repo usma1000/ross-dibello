@@ -115,9 +115,9 @@ const Policy = () => (
       </p>
       <p>Other Ross DiBello for Mayor platform issues include:</p>
       <ul>
-        <li>Recast the yearly budget as a MORAL DOCUMENT.</li>
+        <li>Recast the yearly budget as a Moral Document.</li>
         <li>
-          Ensure a transparent, representative government that treats ALL
+          Ensure a transparent, representative government that treats all
           Clevelanders equally by putting an end to crony capitalism and unfair,
           unjustified handouts of taxpayer money.
         </li>
@@ -150,7 +150,7 @@ const Policy = () => (
         With our current system, Clevelanders need to be aware that the Mayor
         they elect in 2021 could certainly still be campaigning in 2041 with a
         message that “there’s more work to be done.” That Mayor will outraise
-        any ordinary, COMPETENT working resident of this city that wants to
+        any ordinary, competent working resident of this city that wants to
         change it for the better. Now is our chance to secure a better future
         for our city and its people. If not, we’ll suffer the consequences for
         decades to come.
