@@ -52,6 +52,9 @@ const Footer = () => (
 
 const FooterContainer = styled(Container)`
   align-items: center;
+  > div {
+    margin-bottom: 10px;
+  }
 `
 
 const FooterWrapper = styled.footer`

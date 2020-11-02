@@ -11,6 +11,22 @@ export const Nav = styled.nav`
   background: ${(props) =>
     props.scrolled ? `white` : props.theme.color.background.light};
   transition: 0.4s cubic-bezier(0.2, 0.8, 0.2, 1);
+
+  a.button-donate {
+    font-family: ${(props) => props.theme.font.normal};
+    ${(props) => props.theme.font_size.xsmall};
+    color: white;
+    background: ${(props) => props.theme.color.secondary};
+    border-radius: 4px;
+    padding: 10px 16px;
+    text-transform: uppercase;
+    font-size: 14px;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  a.button-donate-mobile {
+    margin-right: 20px;
+  }
 `
 
 export const StyledContainer = styled(Container)`
@@ -90,19 +106,6 @@ export const ActionsContainer = styled.div`
   @media (max-width: ${(props) => props.theme.screen.xs}) {
     display: none;
   }
-
-  a.button {
-    font-family: ${(props) => props.theme.font.normal};
-    ${(props) => props.theme.font_size.xsmall};
-    color: white;
-    background: ${(props) => props.theme.color.secondary};
-    border-radius: 4px;
-    padding: 10px 16px;
-    text-transform: uppercase;
-    font-size: 14px;
-    text-decoration: none;
-    font-weight: bold;
-  }
 `
 
 export const Mobile = styled.div`
@@ -132,6 +135,16 @@ export const SocialIcon = styled.a`
   &:hover {
     color: ${(props) => props.theme.color.secondary};
   }
+
+  @media (max-width: ${(props) => props.theme.screen.xs}) {
+    font-size: 36px;
+    margin-bottom: 20px;
+    display: block;
+  }
+`
+
+export const MobileSocial = styled.div`
+  margin: 26px;
 `
 
 // Background blur info

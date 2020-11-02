@@ -24,6 +24,7 @@ import {
   Mobile,
   ActionsContainer,
   SocialIcon,
+  MobileSocial,
 } from "./style"
 
 const NAV_ITEMS = ["About", "Policy", "Contact"]
@@ -95,6 +96,14 @@ export default class Navigation extends Component {
             </Scrollspy>
           </Brand>
           <Mobile>
+            <a
+              href="https://secure.actblue.com/donate/dibelloforcle"
+              target="_blank"
+              rel="noreferrer"
+              className="button-donate button-donate-mobile"
+            >
+              Donate
+            </a>
             <button
               onClick={this.toggleMobileMenu}
               style={{ color: "black", background: "none" }}
@@ -140,7 +149,7 @@ export default class Navigation extends Component {
               href="https://secure.actblue.com/donate/dibelloforcle"
               target="_blank"
               rel="noreferrer"
-              className="button"
+              className="button-donate button-donate-mobile"
             >
               Donate
             </a>
@@ -150,6 +159,36 @@ export default class Navigation extends Component {
           {mobileMenuOpen && (
             <MobileMenu>
               <Container>{this.getNavList({ mobile: true })}</Container>
+              <MobileSocial>
+                <SocialIcon
+                  href="https://twitter.com/Rossitron5"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <FontAwesomeIcon icon={faTwitter} />
+                </SocialIcon>
+                <SocialIcon
+                  href="https://www.facebook.com/RossDiBelloMayorOfCleveland"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <FontAwesomeIcon icon={faFacebook} />
+                </SocialIcon>
+                <SocialIcon
+                  href="https://www.instagram.com/ross_dibello_cle/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <FontAwesomeIcon icon={faInstagram} />
+                </SocialIcon>
+                <SocialIcon
+                  href="https://www.linkedin.com/in/ross-dibello-78744039/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <FontAwesomeIcon icon={faLinkedinIn} />
+                </SocialIcon>
+              </MobileSocial>
             </MobileMenu>
           )}
         </Mobile>

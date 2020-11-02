@@ -71,10 +71,6 @@ const HeaderTextGroup = styled.div`
 
   > div {
     margin-bottom: -4.5%;
-
-    @media (max-width: ${(props) => props.theme.screen.md}) {
-      margin: 0 16px;
-    }
   }
 
   h1 {
