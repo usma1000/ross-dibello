@@ -118,7 +118,7 @@ export default class Navigation extends Component {
           <Mobile hide>{this.getNavList({})}</Mobile>
           <ActionsContainer>
             <SocialIcon
-              href="https://twitter.com/Rossitron5"
+              href="https://twitter.com/DiBelloForMayor"
               target="_blank"
               rel="noreferrer"
             >
@@ -161,7 +161,7 @@ export default class Navigation extends Component {
               <Container>{this.getNavList({ mobile: true })}</Container>
               <MobileSocial>
                 <SocialIcon
-                  href="https://twitter.com/Rossitron5"
+                  href="https://twitter.com/DiBelloForMayor"
                   target="_blank"
                   rel="noreferrer"
                 >
