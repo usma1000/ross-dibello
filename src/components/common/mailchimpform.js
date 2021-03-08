@@ -51,7 +51,7 @@ const MailchimpForm = () => (
         <div className="clear">
           <FormButton
             type="submit"
-            value="Subscribe"
+            value="Volunteer"
             name="subscribe"
             id="mc-embedded-subscribe"
             className="button"

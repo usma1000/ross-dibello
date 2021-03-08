@@ -47,7 +47,7 @@ const Contact = () => {
             <ContactTitle>Stay Informed</ContactTitle>
             <p>Follow Ross on social media.</p>
             <SocialIcon
-              href="https://twitter.com/Rossitron5"
+              href="https://twitter.com/DiBelloForMayor"
               target="_blank"
               rel="noreferrer"
             >

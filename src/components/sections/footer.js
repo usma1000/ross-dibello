@@ -18,7 +18,7 @@ const Footer = () => (
       <Text>Paid for by Committee to Elect Ross DiBello</Text>
       <div>
         <SocialIcon
-          href="https://twitter.com/Rossitron5"
+          href="https://twitter.com/DiBelloForMayor"
           target="_blank"
           rel="noreferrer"
         >
