@@ -17,7 +17,7 @@ const Contact = () => {
   return (
     <Section id="contact">
       <StyledContainer>
-        <SectionTitle subtitle="Contact" title="Help Us Get On The Ballot" />
+        <SectionTitle subtitle="Contact" title="Help Us Win This Election" />
 
         <Container flex>
           <div className="left">
