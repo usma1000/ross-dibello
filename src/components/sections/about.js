@@ -40,7 +40,7 @@ const About = () => {
         <div>
           <p>
             I have lived in West Park near Kamms Corner with my wife Lauren and
-            our CityDog “Baby,” for two years now. I love my neighbors, the
+            our CityDog “Baby,” for three years now. I love my neighbors, the
             local watering holes, the pizza joints, Rubin’s Family Restaurant &
             Deli, The Hooley, the fish fry at St. Mary’s and too much more to
             list here. (My wife especially loves Five Points Coffee & Tea.)
